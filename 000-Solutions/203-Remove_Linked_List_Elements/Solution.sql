@@ -1,0 +1,7 @@
+--  Remove Linked List Elements
+/*
+ >>>>
+ >>>>
+ >>>>
+ >>>>
+ */
