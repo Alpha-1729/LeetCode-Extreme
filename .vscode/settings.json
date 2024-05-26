@@ -4,6 +4,7 @@
         "concat",
         "Harshad",
         "hashset",
+        "nlogn",
         "nums"
     ],
     "workbench.colorCustomizations": {
