@@ -1,0 +1,7 @@
+--  Smallest Even Multiple
+/*
+ >>>>
+ >>>>
+ >>>>
+ >>>>
+ */
