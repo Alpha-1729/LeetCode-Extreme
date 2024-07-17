@@ -1,0 +1,7 @@
+--  Longest Common Prefix
+/*
+ >>>>
+ >>>>
+ >>>>
+ >>>>
+ */
