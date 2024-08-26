@@ -1,0 +1,7 @@
+--  Furthest Point From Origin
+/*
+ >>>>
+ >>>>
+ >>>>
+ >>>>
+ */
