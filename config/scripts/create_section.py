@@ -9,7 +9,7 @@ from pathlib import Path
 os.chdir(Path(__file__).parents[2])
 
 # Read the config from the config.json file.
-config_path = os.path.join(os.getcwd(), "config", "config.json")
+config_path = os.path.join(os.getcwd(), "config", "settings.json")
 with open(config_path, "r") as config_file:
     config_data = json.load(config_file)
 
@@ -23,7 +23,9 @@ section_name = [word.capitalize() for word in section_name.split(" ")]
 section_name = "_".join(section_name)
 
 # Create section directory.
-section_dir_name = "{}{}-{}".format(str(section_number).zfill(3), section_prefix, section_name)
+section_dir_name = "{}{}-{}".format(
+    str(section_number).zfill(3), section_prefix, section_name
+)
 os.mkdir(section_dir_name)
 
 # Update the section and template info in the config file.

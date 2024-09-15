@@ -10,7 +10,7 @@ from pathlib import Path
 os.chdir(Path(__file__).parents[2])
 
 template_path = os.path.join(os.getcwd(), "config", "templates")
-config_json_path = os.path.join(os.getcwd(), "config", "config.json")
+config_json_path = os.path.join(os.getcwd(), "config", "settings.json")
 
 # Read the config from the config.json file.
 with open(config_json_path, "r") as config_file:
@@ -31,7 +31,9 @@ template_name = "_".join(template_name)
 
 topic_name = template_name.replace("_", " ")
 
-template_dir_name = "{}{}-{}".format(str(template_number).zfill(3), template_prefix, template_name)
+template_dir_name = "{}{}-{}".format(
+    str(template_number).zfill(3), template_prefix, template_name
+)
 destination_path = os.path.join(os.getcwd(), latest_section, template_dir_name)
 
 # Moving all the content from the template folder to the destination.
